@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/marketplaceFragment">
+
+
+    <fragment
+        android:id="@+id/marketplaceFragment"
+        android:name="com.example.marketplanner.MarketplaceFragment"
+        tools:layout="@layout/fragment_marketplace">
+        <action
+            android:id="@+id/action_marketplaceFragment_to_companyDetailsFragment2"
+            app:destination="@id/companyDetailsFragment" />
+        <action
+            android:id="@+id/action_marketplaceFragment_to_reportsFragment2"
+            app:destination="@id/reportsFragment" />
+        <action
+            android:id="@+id/action_marketplaceFragment_to_predscriptionsFragment"
+            app:destination="@id/predscriptionsFragment" />
+    </fragment>
+
+        <fragment
+            android:id="@+id/menuFragment"
+            android:name="com.example.marketplanner.MenuFragment"
+            tools:layout="@layout/fragment_menu">
+        </fragment>
+
+    <fragment
+        android:id="@+id/companyDetailsFragment"
+        android:name="com.example.marketplanner.CompanyDetailsFragment"
+        tools:layout="@layout/fragment_company_details"
+        />
+
+    <fragment
+        android:id="@+id/reportsFragment"
+        android:name="com.example.marketplanner.ReportsFragment"
+        tools:layout="@layout/fragment_reports"
+        />
+
+    <fragment
+        android:id="@+id/predscriptionsFragment"
+        android:name="com.example.marketplanner.PredscriptionsFragment"
+        tools:layout="@layout/fragment_predscriptions"
+        />
+
+</navigation>

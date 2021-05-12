@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">MarketPlanner</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="success_button">Success button</string>
+    <string name="that_s_a_marketplace_screen">That\'s a marketplace screen</string>
+    <string name="to_reports">To reports</string>
+    <string name="to_marketplace">To marketplace</string>
+    <string name="company_details">Company details</string>
+    <string name="to_company_details">To company details</string>
+    <string name="button">Button</string>
+    <string name="to_predscriptions">to predscriptions</string>
+</resources>

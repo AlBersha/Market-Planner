@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MarketplaceFragment"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/marketplaceToCompanyButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/to_company_details" />
+
+        <Button
+            android:id="@+id/marketplaceToReportsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/to_reports" />
+
+        <Button
+            android:id="@+id/marketplaceToPredscriptionsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/to_predscriptions" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="That's a new marketplace fragment" />
+
+    </LinearLayout>
+</layout>
