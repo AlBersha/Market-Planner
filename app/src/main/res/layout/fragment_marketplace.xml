@@ -27,6 +27,13 @@
             android:layout_height="wrap_content"
             android:text="@string/to_predscriptions" />
 
+
+        <Button
+            android:id="@+id/marketplaceToSettingsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/to_settings" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"

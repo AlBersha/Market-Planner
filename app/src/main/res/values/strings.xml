@@ -19,4 +19,9 @@
     <string name="to_company_details">To company details</string>
     <string name="button">Button</string>
     <string name="to_predscriptions">to predscriptions</string>
+    <string name="marketplace">Marketplace</string>
+    <string name="reports">Reports</string>
+    <string name="predscriptions">Predscriptions</string>
+    <string name="settings">Settings</string>
+    <string name="to_settings">To settings</string>
 </resources>

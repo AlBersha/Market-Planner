@@ -24,8 +24,8 @@ class MarketplaceFragment : Fragment() {
                 view: View -> view.findNavController().navigate(R.id.action_marketplaceFragment_to_reportsFragment2)
         }
 
-        binding.marketplaceToPredscriptionsButton.setOnClickListener { view: View ->
-            view.findNavController().navigate(R.id.action_marketplaceFragment_to_predscriptionsFragment)
+        binding.marketplaceToSettingsButton.setOnClickListener { view: View ->
+            view.findNavController().navigate(R.id.action_marketplaceFragment_to_settingsFragment)
         }
 
         return binding.root

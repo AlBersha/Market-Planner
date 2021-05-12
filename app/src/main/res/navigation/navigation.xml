@@ -19,6 +19,9 @@
         <action
             android:id="@+id/action_marketplaceFragment_to_predscriptionsFragment"
             app:destination="@id/predscriptionsFragment" />
+        <action
+            android:id="@+id/action_marketplaceFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
     </fragment>
 
         <fragment
@@ -43,6 +46,12 @@
         android:id="@+id/predscriptionsFragment"
         android:name="com.example.marketplanner.PredscriptionsFragment"
         tools:layout="@layout/fragment_predscriptions"
+        />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.marketplanner.SettingsFragment"
+        tools:layout="@layout/fragment_settings"
         />
 
 </navigation>
