@@ -24,4 +24,13 @@
     <string name="predscriptions">Predscriptions</string>
     <string name="settings">Settings</string>
     <string name="to_settings">To settings</string>
+    <string name="log_in">LOG IN</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="log_in_with_google">Log in with GOOGLE</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="log_out">Log out</string>
+    <string name="sing_up">Sing Up</string>
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
 </resources>

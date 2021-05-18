@@ -24,12 +24,6 @@
             app:destination="@id/settingsFragment" />
     </fragment>
 
-        <fragment
-            android:id="@+id/menuFragment"
-            android:name="com.example.marketplanner.MenuFragment"
-            tools:layout="@layout/fragment_menu">
-        </fragment>
-
     <fragment
         android:id="@+id/companyDetailsFragment"
         android:name="com.example.marketplanner.CompanyDetailsFragment"
@@ -52,6 +46,18 @@
         android:id="@+id/settingsFragment"
         android:name="com.example.marketplanner.SettingsFragment"
         tools:layout="@layout/fragment_settings"
+        />
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.marketplanner.LoginFragment"
+        tools:layout="@layout/fragment_login"
+        />
+
+    <fragment
+        android:id="@+id/signupFragment"
+        android:name="com.example.marketplanner.LoginFragment"
+        tools:layout="@layout/fragment_sign_up"
         />
 
 </navigation>

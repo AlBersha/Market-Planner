@@ -16,17 +16,17 @@ class MarketplaceFragment : Fragment() {
         val binding: FragmentMarketplaceBinding = DataBindingUtil.inflate(
             inflater, R.layout.fragment_marketplace, container, false)
 
-        binding.marketplaceToCompanyButton.setOnClickListener {
-            view: View -> view.findNavController().navigate(R.id.action_marketplaceFragment_to_companyDetailsFragment2)
-        }
-
-        binding.marketplaceToReportsButton.setOnClickListener {
-                view: View -> view.findNavController().navigate(R.id.action_marketplaceFragment_to_reportsFragment2)
-        }
-
-        binding.marketplaceToSettingsButton.setOnClickListener { view: View ->
-            view.findNavController().navigate(R.id.action_marketplaceFragment_to_settingsFragment)
-        }
+//        binding.marketplaceToCompanyButton.setOnClickListener {
+//            view: View -> view.findNavController().navigate(R.id.action_marketplaceFragment_to_companyDetailsFragment2)
+//        }
+//
+//        binding.marketplaceToReportsButton.setOnClickListener {
+//                view: View -> view.findNavController().navigate(R.id.action_marketplaceFragment_to_reportsFragment2)
+//        }
+//
+//        binding.marketplaceToSettingsButton.setOnClickListener { view: View ->
+//            view.findNavController().navigate(R.id.action_marketplaceFragment_to_settingsFragment)
+//        }
 
         return binding.root
     }
