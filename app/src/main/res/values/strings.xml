@@ -33,4 +33,7 @@
     <string name="sing_up">Sing Up</string>
     <string name="name">Name</string>
     <string name="surname">Surname</string>
+    <string name="recommendation">Recommendation</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
 </resources>

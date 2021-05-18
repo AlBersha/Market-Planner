@@ -1,3 +1,4 @@
 package com.example.marketplanner
 
-class Company (companyName: String, companyDescription: String)
+data class Company (val imageLogo: Int, val companyName: String, val companySubtitle: String,
+                    val currentCost: Float, val costDifference: Float)

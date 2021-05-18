@@ -19,19 +19,20 @@
             android:layout_marginTop="16dp"
             android:text="@string/marketplace"
             android:textSize="@dimen/title_size"
+            android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/searchbarEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="26dp"
             android:layout_marginTop="26dp"
             android:layout_marginRight="26dp"
             android:ems="10"
-            android:hint="Search"
+            android:hint="@string/search"
             android:inputType="textPersonName"
             android:textAlignment="center"
             android:textSize="18sp"
@@ -40,12 +41,16 @@
             app:layout_constraintTop_toTopOf="@+id/textView" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="413dp"
+            android:id="@+id/recyclerMarketplaceView"
+            android:layout_width="match_parent"
             android:layout_height="644dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="16dp"
+            android:clipToPadding="false"
+            android:padding="4dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+            app:layout_constraintTop_toBottomOf="@+id/searchbarEditText"
+            tools:listitem="@layout/list_of_companies" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

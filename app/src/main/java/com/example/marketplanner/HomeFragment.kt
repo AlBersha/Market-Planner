@@ -7,23 +7,20 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.marketplanner.databinding.FragmentPredscriptionsBinding
+import com.example.marketplanner.databinding.FragmentHomeBinding
 
-class PredscriptionsFragment : Fragment() {
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?): View? {
-
-        val binding: FragmentPredscriptionsBinding = DataBindingUtil.inflate(
-            inflater, R.layout.fragment_predscriptions, container, false)
+class HomeFragment : Fragment() {
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        val binding: FragmentHomeBinding = DataBindingUtil.inflate(
+            inflater, R.layout.fragment_home, container, false)
 
         val companiesList = generateDummyList()
-        binding.recyclerPredscriptionView.adapter = CompanyAdapter(companiesList)
-        binding.recyclerPredscriptionView.layoutManager = LinearLayoutManager(activity)
-        binding.recyclerPredscriptionView.setHasFixedSize(true)
-
-        binding.recyclerRecommendationView.adapter = CompanyAdapter(companiesList)
-        binding.recyclerRecommendationView.layoutManager = LinearLayoutManager(activity)
-        binding.recyclerRecommendationView.setHasFixedSize(true)
+        binding.recyclerHomeView.adapter = CompanyAdapter(companiesList)
+        binding.recyclerHomeView.layoutManager = LinearLayoutManager(activity)
+        binding.recyclerHomeView.setHasFixedSize(true)
 
         return binding.root
     }

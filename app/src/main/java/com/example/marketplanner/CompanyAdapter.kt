@@ -3,31 +3,38 @@ package com.example.marketplanner
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class CompanyAdapter(private val dataSet: ArrayList<String>)
-    : RecyclerView.Adapter<CompanyAdapter.ViewHolder>() {
+class CompanyAdapter(private val companiesList: List<Company>)
+    : RecyclerView.Adapter<CompanyAdapter.CompanyViewHolder>() {
 
-    class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        val textView: TextView
+    class CompanyViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+        val imageView: ImageView = view.findViewById(R.id.companyLogoView)
+        val companyTitleTextView: TextView = view.findViewById(R.id.companyTitleTextView)
+        val companySubtitleTextView: TextView = view.findViewById(R.id.companySubtitleTextView)
+        val currentCostTextView: TextView = view.findViewById(R.id.currentCostTextView)
+        val costDifferenceTextView: TextView = view.findViewById(R.id.costDifferenceTextView)
 
-        init {
-            // Define click listener for the ViewHolder's View.
-            textView = view.findViewById(R.id.textView)
-        }
     }
 
-    override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(viewGroup.context)
-            .inflate(R.layout.activity_main, viewGroup, false)
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CompanyViewHolder {
+        val itemView = LayoutInflater.from(parent.context).inflate(
+            R.layout.list_of_companies, parent, false)
 
-        return ViewHolder(view)
+        return CompanyViewHolder(itemView)
     }
 
-    override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
-        viewHolder.textView.text = dataSet[position]
+    override fun onBindViewHolder(holder: CompanyViewHolder, position: Int) {
+        var currentItem = companiesList[position]
+
+        holder.imageView.setImageResource(currentItem.imageLogo)
+        holder.companyTitleTextView.text = currentItem.companyName
+        holder.companySubtitleTextView.text = currentItem.companySubtitle
+        holder.currentCostTextView.text = currentItem.currentCost.toString()
+        holder.costDifferenceTextView.text = currentItem.costDifference.toString()
     }
 
-    override fun getItemCount() = dataSet.size
-    }
+    override fun getItemCount() = companiesList.size
+}
