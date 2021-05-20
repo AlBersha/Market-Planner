@@ -10,6 +10,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.NavigationUI
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.marketplanner.adapters.ViewPagerAdapter
 import com.example.marketplanner.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -30,12 +31,7 @@ class MainActivity : AppCompatActivity() {
         NavigationUI.setupWithNavController(binding.navView, navController)
 
 
-        setInitailData()
-//        val cc = findViewById<View>(R.id.recyclerview) as RecyclerView
-//        val adapter = CompanyAdapter(companies)
-//        cc.adapter = adapter
-//        cc.layoutManager = LinearLayoutManager(this)
-
+//        setInitialData()
     }
 
     override fun onSupportNavigateUp(): Boolean {
@@ -43,9 +39,9 @@ class MainActivity : AppCompatActivity() {
         return NavigationUI.navigateUp(navController, appBarConfiguration)
     }
 
-    private fun setInitailData(){
-        companies.add("Google")
-        companies.add("Apple")
-        companies.add("Amazon")
-    }
+//    private fun setInitialData(){
+//        companies.add("Google")
+//        companies.add("Apple")
+//        companies.add("Amazon")
+//    }
 }
