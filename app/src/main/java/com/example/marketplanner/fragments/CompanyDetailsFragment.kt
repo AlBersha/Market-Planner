@@ -1,12 +1,14 @@
-package com.example.marketplanner
+package com.example.marketplanner.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.marketplanner.R
 
-class MenuFragment : Fragment() {
+class CompanyDetailsFragment : Fragment() {
+
 //    override fun onCreate(savedInstanceState: Bundle?) {
 //        super.onCreate(savedInstanceState)
 //    }
@@ -15,10 +17,10 @@ class MenuFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-//        val binding = DataBindingUtil.inflate<FragmentMenuBinding>(
-//            inflater, R.id.menuFragment, container, false)
-
-        return inflater.inflate(R.layout.fragment_menu, container, false)
+//        val binding: FragmentCompanyDetailsBinding = DataBindingUtil.inflate(
+//            inflater, R.id.companyDetailsFragment, container, false)
 //        return binding.root
+        return inflater.inflate(R.layout.fragment_company_details, container, false)
     }
+
 }

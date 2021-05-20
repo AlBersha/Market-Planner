@@ -1,22 +1,45 @@
-package com.example.marketplanner
+package com.example.marketplanner.adapters
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.marketplanner.R
+import com.example.marketplanner.fragments.CompanyDetailsFragment
+import com.example.marketplanner.models.CompanyModel
 
-class CompanyAdapter(private val companiesList: List<Company>)
+class CompanyAdapter(
+    private val companiesList: List<CompanyModel>,
+    private val listener: OnItemClickListener )
     : RecyclerView.Adapter<CompanyAdapter.CompanyViewHolder>() {
 
-    class CompanyViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+    inner class CompanyViewHolder(view: View) : RecyclerView.ViewHolder(view),
+    View.OnClickListener {
         val imageView: ImageView = view.findViewById(R.id.companyLogoView)
         val companyTitleTextView: TextView = view.findViewById(R.id.companyTitleTextView)
         val companySubtitleTextView: TextView = view.findViewById(R.id.companySubtitleTextView)
         val currentCostTextView: TextView = view.findViewById(R.id.currentCostTextView)
         val costDifferenceTextView: TextView = view.findViewById(R.id.costDifferenceTextView)
 
+        init {
+            itemView.setOnClickListener(this)
+        }
+
+        override fun onClick(v: View?) {
+            val position = adapterPosition
+            if (position != RecyclerView.NO_POSITION) {
+                listener.onItemClick(position)
+            }
+        }
+    }
+
+    interface OnItemClickListener {
+        fun onItemClick(position: Int)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CompanyViewHolder {
@@ -34,7 +57,9 @@ class CompanyAdapter(private val companiesList: List<Company>)
         holder.companySubtitleTextView.text = currentItem.companySubtitle
         holder.currentCostTextView.text = currentItem.currentCost.toString()
         holder.costDifferenceTextView.text = currentItem.costDifference.toString()
+
     }
 
     override fun getItemCount() = companiesList.size
+
 }
