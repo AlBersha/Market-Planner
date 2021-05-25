@@ -53,8 +53,8 @@ class CompanyAdapter(
         var currentItem = companiesList[position]
 
         holder.imageView.setImageResource(currentItem.imageLogo)
-        holder.companyTitleTextView.text = currentItem.companyName
-        holder.companySubtitleTextView.text = currentItem.companySubtitle
+        holder.companyTitleTextView.text = currentItem.name
+        holder.companySubtitleTextView.text = currentItem.description
         holder.currentCostTextView.text = currentItem.currentCost.toString()
         holder.costDifferenceTextView.text = currentItem.costDifference.toString()
 
