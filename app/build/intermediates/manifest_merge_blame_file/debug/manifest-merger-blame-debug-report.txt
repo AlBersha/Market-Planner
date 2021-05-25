@@ -1,0 +1,93 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="marketplanner.stocks"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="28"
+8-->C:\Users\ekate\IdeaProjects\Market-Planner\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->[androidx.preference:preference:1.1.0-beta01] C:\Users\ekate\.gradle\caches\transforms-2\files-2.1\bd49cfe54f236f3dbed1adf57a076e59\preference-1.1.0-beta01\AndroidManifest.xml:22:9-38
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\ekate\IdeaProjects\Market-Planner\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Users\ekate\IdeaProjects\Market-Planner\app\src\main\AndroidManifest.xml:5:22-64
+12
+13    <application
+13-->C:\Users\ekate\IdeaProjects\Market-Planner\app\src\main\AndroidManifest.xml:7:5-43:19
+14        android:name="marketplanner.stocks.StockApplication"
+14-->C:\Users\ekate\IdeaProjects\Market-Planner\app\src\main\AndroidManifest.xml:8:9-41
+15        android:allowBackup="true"
+15-->C:\Users\ekate\IdeaProjects\Market-Planner\app\src\main\AndroidManifest.xml:9:9-35
+16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+16-->[androidx.core:core:1.1.0-rc01] C:\Users\ekate\.gradle\caches\transforms-2\files-2.1\059c0c5385661f31fc8f2017072a1003\core-1.1.0-rc01\AndroidManifest.xml:24:18-86
+17        android:debuggable="true"
+18        android:extractNativeLibs="false"
+19        android:icon="@mipmap/ic_bull"
+19-->C:\Users\ekate\IdeaProjects\Market-Planner\app\src\main\AndroidManifest.xml:10:9-39
+20        android:label="@string/app_name"
+20-->C:\Users\ekate\IdeaProjects\Market-Planner\app\src\main\AndroidManifest.xml:11:9-41
+21        android:roundIcon="@mipmap/ic_bull"
+21-->C:\Users\ekate\IdeaProjects\Market-Planner\app\src\main\AndroidManifest.xml:12:9-44
+22        android:supportsRtl="true"
+22-->C:\Users\ekate\IdeaProjects\Market-Planner\app\src\main\AndroidManifest.xml:13:9-35
+23        android:testOnly="true"
+24        android:theme="@style/AppTheme" >
+24-->C:\Users\ekate\IdeaProjects\Market-Planner\app\src\main\AndroidManifest.xml:14:9-40
+25        <activity
+25-->C:\Users\ekate\IdeaProjects\Market-Planner\app\src\main\AndroidManifest.xml:15:9-19:20
+26            android:name="marketplanner.stocks.AddStockActivity"
+26-->C:\Users\ekate\IdeaProjects\Market-Planner\app\src\main\AndroidManifest.xml:16:13-45
+27            android:label="Add Stock Symbol"
+27-->C:\Users\ekate\IdeaProjects\Market-Planner\app\src\main\AndroidManifest.xml:17:13-45
+28            android:parentActivityName="marketplanner.stocks.EditListActivity" >
+28-->C:\Users\ekate\IdeaProjects\Market-Planner\app\src\main\AndroidManifest.xml:18:13-59
+29        </activity>
+30        <activity
+30-->C:\Users\ekate\IdeaProjects\Market-Planner\app\src\main\AndroidManifest.xml:20:9-23:67
+31            android:name="marketplanner.stocks.EditListActivity"
+31-->C:\Users\ekate\IdeaProjects\Market-Planner\app\src\main\AndroidManifest.xml:21:13-45
+32            android:label="Edit Stock List"
+32-->C:\Users\ekate\IdeaProjects\Market-Planner\app\src\main\AndroidManifest.xml:22:13-44
+33            android:parentActivityName="marketplanner.stocks.MainActivity" />
+33-->C:\Users\ekate\IdeaProjects\Market-Planner\app\src\main\AndroidManifest.xml:23:13-55
+34        <activity
+34-->C:\Users\ekate\IdeaProjects\Market-Planner\app\src\main\AndroidManifest.xml:24:9-31:20
+35            android:name="marketplanner.stocks.SettingsActivity"
+35-->C:\Users\ekate\IdeaProjects\Market-Planner\app\src\main\AndroidManifest.xml:25:13-45
+36            android:label="@string/settings_activity_title"
+36-->C:\Users\ekate\IdeaProjects\Market-Planner\app\src\main\AndroidManifest.xml:26:13-60
+37            android:parentActivityName="marketplanner.stocks.MainActivity" >
+37-->C:\Users\ekate\IdeaProjects\Market-Planner\app\src\main\AndroidManifest.xml:27:13-55
+38            <meta-data
+38-->C:\Users\ekate\IdeaProjects\Market-Planner\app\src\main\AndroidManifest.xml:28:13-30:69
+39                android:name="android.support.PARENT_ACTIVITY"
+39-->C:\Users\ekate\IdeaProjects\Market-Planner\app\src\main\AndroidManifest.xml:29:17-63
+40                android:value="marketplanner.stocks.MainActivity" />
+40-->C:\Users\ekate\IdeaProjects\Market-Planner\app\src\main\AndroidManifest.xml:30:17-66
+41        </activity>
+42        <activity
+42-->C:\Users\ekate\IdeaProjects\Market-Planner\app\src\main\AndroidManifest.xml:32:9-42:20
+43            android:name="marketplanner.stocks.MainActivity"
+43-->C:\Users\ekate\IdeaProjects\Market-Planner\app\src\main\AndroidManifest.xml:33:13-41
+44            android:colorMode="wideColorGamut"
+44-->C:\Users\ekate\IdeaProjects\Market-Planner\app\src\main\AndroidManifest.xml:34:13-47
+45            android:label="@string/app_name"
+45-->C:\Users\ekate\IdeaProjects\Market-Planner\app\src\main\AndroidManifest.xml:35:13-45
+46            android:theme="@style/AppTheme.NoActionBar" >
+46-->C:\Users\ekate\IdeaProjects\Market-Planner\app\src\main\AndroidManifest.xml:36:13-56
+47            <intent-filter>
+47-->C:\Users\ekate\IdeaProjects\Market-Planner\app\src\main\AndroidManifest.xml:37:13-41:29
+48                <action android:name="android.intent.action.MAIN" />
+48-->C:\Users\ekate\IdeaProjects\Market-Planner\app\src\main\AndroidManifest.xml:38:17-69
+48-->C:\Users\ekate\IdeaProjects\Market-Planner\app\src\main\AndroidManifest.xml:38:25-66
+49
+50                <category android:name="android.intent.category.LAUNCHER" />
+50-->C:\Users\ekate\IdeaProjects\Market-Planner\app\src\main\AndroidManifest.xml:40:17-77
+50-->C:\Users\ekate\IdeaProjects\Market-Planner\app\src\main\AndroidManifest.xml:40:27-74
+51            </intent-filter>
+52        </activity>
+53    </application>
+54
+55</manifest>

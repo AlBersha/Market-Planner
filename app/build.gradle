@@ -4,7 +4,7 @@ android {
     compileSdkVersion 28
     buildToolsVersion "30.0.2"
     defaultConfig {
-        applicationId "marketplanner"
+        applicationId "marketplanner.stocks"
         minSdkVersion 28
         versionCode 1
         versionName "1.0"
