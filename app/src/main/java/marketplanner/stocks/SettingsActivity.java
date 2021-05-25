@@ -28,10 +28,6 @@ import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.PreferenceScreen;
 
-import net.alliedmods.quotes.IQuoteService;
-import net.alliedmods.quotes.QuoteFetcher;
-import net.alliedmods.quotes.QuoteRequest;
-import net.alliedmods.quotes.QuoteResult;
 
 import java.util.ArrayList;
 import java.util.List;
