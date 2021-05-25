@@ -19,10 +19,6 @@ package net.alliedmods.quotes;
 
 import android.util.Log;
 
-import net.alliedmods.stocks.FastCsvParser;
-import net.alliedmods.stocks.IThread;
-import net.alliedmods.stocks.UrlBuilder;
-import net.alliedmods.stocks.Utilities;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
