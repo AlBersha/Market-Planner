@@ -1,0 +1,36 @@
+package com.example.marketplanner.models
+
+data class CompanyModel (
+    val imageLogo: Int,
+    val name: String,
+    var description: String,
+    val currentCost: Float,
+    val costDifference: Float,
+
+    val active: Boolean,
+    val bloomberg: String,
+    val ceo: String,
+    val cik: Int,
+    val country: String,
+    val employees: Int,
+    val exchange: String,
+    val exchangeSymbol: String,
+    val figi: Any,
+    val hq_address: String,
+    val hq_country: String,
+    val hq_state: String,
+    val industry: String,
+    val lei: String,
+    val listdate: String,
+    val logo: String,
+    val marketcap: Long,
+    val phone: String,
+    val sector: String,
+    val sic: Int,
+    val similar: List<String>,
+    val symbol: String,
+    val tags: List<String>,
+    val type: String,
+    val updated: String,
+    val url: String
+)

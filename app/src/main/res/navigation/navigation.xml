@@ -8,13 +8,13 @@
 
     <fragment
         android:id="@+id/marketplaceFragment"
-        android:name="com.example.marketplanner.MarketplaceFragment"
+        android:name="com.example.marketplanner.fragments.MarketplaceFragment"
         tools:layout="@layout/fragment_marketplace">
         <action
-            android:id="@+id/action_marketplaceFragment_to_companyDetailsFragment2"
+            android:id="@+id/action_marketplaceFragment_to_companyDetailsFragment"
             app:destination="@id/companyDetailsFragment" />
         <action
-            android:id="@+id/action_marketplaceFragment_to_reportsFragment2"
+            android:id="@+id/action_marketplaceFragment_to_reportsFragment"
             app:destination="@id/reportsFragment" />
         <action
             android:id="@+id/action_marketplaceFragment_to_predscriptionsFragment"
@@ -22,42 +22,54 @@
         <action
             android:id="@+id/action_marketplaceFragment_to_settingsFragment"
             app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_marketplaceFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_marketplaceFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
     </fragment>
 
     <fragment
         android:id="@+id/companyDetailsFragment"
-        android:name="com.example.marketplanner.CompanyDetailsFragment"
+        android:name="com.example.marketplanner.fragments.CompanyDetailsFragment"
         tools:layout="@layout/fragment_company_details"
         />
 
     <fragment
         android:id="@+id/reportsFragment"
-        android:name="com.example.marketplanner.ReportsFragment"
+        android:name="com.example.marketplanner.fragments.ReportsFragment"
         tools:layout="@layout/fragment_reports"
         />
 
     <fragment
         android:id="@+id/predscriptionsFragment"
-        android:name="com.example.marketplanner.PredscriptionsFragment"
+        android:name="com.example.marketplanner.fragments.PredscriptionsFragment"
         tools:layout="@layout/fragment_predscriptions"
         />
 
     <fragment
         android:id="@+id/settingsFragment"
-        android:name="com.example.marketplanner.SettingsFragment"
+        android:name="com.example.marketplanner.fragments.SettingsFragment"
         tools:layout="@layout/fragment_settings"
         />
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.example.marketplanner.LoginFragment"
+        android:name="com.example.marketplanner.fragments.LoginFragment"
         tools:layout="@layout/fragment_login"
         />
 
     <fragment
         android:id="@+id/signupFragment"
-        android:name="com.example.marketplanner.LoginFragment"
+        android:name="com.example.marketplanner.fragments.LoginFragment"
         tools:layout="@layout/fragment_sign_up"
+        />
+
+        <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.marketplanner.fragments.HomeFragment"
+        tools:layout="@layout/fragment_home"
         />
 
 </navigation>
