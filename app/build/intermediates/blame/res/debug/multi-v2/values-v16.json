@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\ekate\\IdeaProjects\\Market-Planner\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ekate\\.gradle\\caches\\transforms-2\\files-2.1\\24cb6943fc8e037c5ee9d91fd8935744\\appcompat-1.1.0-beta01\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\ekate\\.gradle\\caches\\transforms-2\\files-2.1\\f209091eb3926c649f0b3346884e478c\\appcompat-1.1.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ekate\\.gradle\\caches\\transforms-2\\files-2.1\\059c0c5385661f31fc8f2017072a1003\\core-1.1.0-rc01\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\ekate\\.gradle\\caches\\transforms-2\\files-2.1\\429fb715fcc7711d4ab133e350b6f531\\core-1.3.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

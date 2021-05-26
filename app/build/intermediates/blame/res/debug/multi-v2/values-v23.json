@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\ekate\\IdeaProjects\\Market-Planner\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ekate\\.gradle\\caches\\transforms-2\\files-2.1\\24cb6943fc8e037c5ee9d91fd8935744\\appcompat-1.1.0-beta01\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\ekate\\.gradle\\caches\\transforms-2\\files-2.1\\f209091eb3926c649f0b3346884e478c\\appcompat-1.1.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,20,34,35,36,37,41,42,43,44",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -31,6 +31,25 @@
                         "endLines": "50",
                         "endColumns": "12",
                         "endOffsets": "3552"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\ekate\\.gradle\\caches\\transforms-2\\files-2.1\\00561401b8c088f04e082718644272e8\\material-1.2.0-alpha03\\res\\values-v23\\values-v23.xml",
+                    "from": {
+                        "startLines": "2,6",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,320",
+                        "endLines": "5,9",
+                        "endColumns": "10,10",
+                        "endOffsets": "315,588"
+                    },
+                    "to": {
+                        "startLines": "51,55",
+                        "startColumns": "4,4",
+                        "startOffsets": "3557,3822",
+                        "endLines": "54,58",
+                        "endColumns": "10,10",
+                        "endOffsets": "3817,4090"
                     }
                 }
             ]

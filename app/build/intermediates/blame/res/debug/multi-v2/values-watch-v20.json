@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\ekate\\IdeaProjects\\Market-Planner\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v20\\values-watch-v20.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ekate\\.gradle\\caches\\transforms-2\\files-2.1\\24cb6943fc8e037c5ee9d91fd8935744\\appcompat-1.1.0-beta01\\res\\values-watch-v20\\values-watch-v20.xml",
+                    "source": "C:\\Users\\ekate\\.gradle\\caches\\transforms-2\\files-2.1\\f209091eb3926c649f0b3346884e478c\\appcompat-1.1.0\\res\\values-watch-v20\\values-watch-v20.xml",
                     "from": {
                         "startLines": "2,5,8",
                         "startColumns": "4,4,4",
