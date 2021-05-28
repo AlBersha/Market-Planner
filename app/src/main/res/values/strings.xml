@@ -6,8 +6,12 @@
     <string name="api_settings_header">API Settings</string>
     <string name="api_key_title">API Key</string>
     <string name="quote_api_title">Market Data Provider</string>
-    <string name="quote_api_help">Select a market data provider to use. You will have to obtain an API key from whichever you select. IEX Cloud and World Trading Data both have free services.</string>
-    <string name="note_alphavantage">Tap to set. Note: free keys are very limited and can only fetch 5 quotes per minute</string>
+    <string name="quote_api_help">Select a market data provider to use. You will have to obtain an API key from
+        whichever you select. IEX Cloud and World Trading Data both have free services.
+    </string>
+    <string name="note_alphavantage">Tap to set. Note: free keys are very limited and can only fetch 5 quotes per
+        minute
+    </string>
     <string name="note_iexcloud">Tap to set.</string>
     <string name="note_intrinio">Tap to set. Note: subscription is required.</string>
     <string name="note_wtd">Tap to set. Note: free keys are limited to 250 queries per day.</string>
@@ -52,4 +56,5 @@
     <string name="recommendation">Recommendation</string>
     <string name="home">Home</string>
     <string name="search">Search</string>
+    <string name="title_activity_login">LoginActivity</string>
 </resources>
