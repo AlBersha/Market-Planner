@@ -2,21 +2,37 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/homeFragment"
-        android:title="@string/home" />
+        android:id="@+id/stockFragment"
+        android:title="Stocks" />
+
     <item
-        android:id="@+id/marketplaceFragment"
-        android:title="@string/marketplace" />
+        android:id="@+id/addStockFragment"
+        android:title="Add stocks" />
+
     <item
-        android:id="@+id/predscriptionsFragment"
-        android:title="@string/predscriptions" />
+        android:id="@+id/editListFragment"
+        android:title="Edit Stock" />
+
     <item
-        android:id="@+id/reportsFragment"
-        android:title="@string/reports" />
-    <item
-        android:id="@+id/settingsFragment"
-        android:title="@string/settings" />
-    <item
-        android:id="@+id/loginFragment"
-        android:title="@string/log_out" />
+        android:id="@+id/settings"
+        android:title="Settings" />
+
+<!--    <item-->
+<!--        android:id="@+id/homeFragment"-->
+<!--        android:title="@string/home" />-->
+<!--    <item-->
+<!--        android:id="@+id/marketplaceFragment"-->
+<!--        android:title="@string/marketplace" />-->
+<!--    <item-->
+<!--        android:id="@+id/predscriptionsFragment"-->
+<!--        android:title="@string/predscriptions" />-->
+<!--    <item-->
+<!--        android:id="@+id/reportsFragment"-->
+<!--        android:title="@string/reports" />-->
+<!--    <item-->
+<!--        android:id="@+id/settingsFragment"-->
+<!--        android:title="@string/settings" />-->
+<!--    <item-->
+<!--        android:id="@+id/loginFragment"-->
+<!--        android:title="@string/log_out" />-->
 </menu>
