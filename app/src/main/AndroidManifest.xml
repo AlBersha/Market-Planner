@@ -3,6 +3,8 @@
     package="marketplanner.stocks">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-feature android:name="android.hardware.fingerprint"
+        android:required="true"/>
 
     <application
         android:name=".StockApplication"
