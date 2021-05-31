@@ -18,6 +18,10 @@ public class TaskToken {
         tasks_added_ = num_tasks;
     }
 
+    public int taskAdded(){
+        return tasks_added_;
+    }
+
     public void cancel() {
         synchronized (this) {
             cancelled_ = true;
