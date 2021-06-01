@@ -6,6 +6,8 @@ import org.junit.BeforeClass;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TestRule;
+import org.junit.runner.RunWith;
+import org.junit.runners.JUnit4;
 
 import java.io.UnsupportedEncodingException;
 import java.math.BigDecimal;
@@ -28,6 +30,7 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 
+@RunWith(JUnit4.class)
 public class ServicesUnitTest {
     private static final String BASE_URL = "http://fakeparams.net";
     private static final String parameter = "fake_param";
