@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
     private TaskToken refresh_task_;
     private SwipeRefreshLayout refresh_view_;
 
+
     enum ChangeBoxMode {
         Value,
         Percent
@@ -62,26 +63,6 @@ public class MainActivity extends AppCompatActivity {
 
         settings_ = StockApplication.getSettings();
 
-//        BiometricManager biometricManager = BiometricManager.from(this);
-//        switch (biometricManager.canAuthenticate(BIOMETRIC_STRONG | DEVICE_CREDENTIAL)) {
-//            case BiometricManager.BIOMETRIC_SUCCESS:
-//                Log.d("MY_APP_TAG", "App can authenticate using biometrics.");
-//                break;
-//            case BiometricManager.BIOMETRIC_ERROR_NO_HARDWARE:
-//                Log.e("MY_APP_TAG", "No biometric features available on this device.");
-//                break;
-//            case BiometricManager.BIOMETRIC_ERROR_HW_UNAVAILABLE:
-//                Log.e("MY_APP_TAG", "Biometric features are currently unavailable.");
-//                break;
-//            case BiometricManager.BIOMETRIC_ERROR_NONE_ENROLLED:
-//                // Prompts the user to create credentials that your app accepts.
-//                final Intent enrollIntent = new Intent(Settings.ACTION_BIOMETRIC_ENROLL);
-//                enrollIntent.putExtra(Settings.EXTRA_BIOMETRIC_AUTHENTICATORS_ALLOWED,
-//                        BIOMETRIC_STRONG | DEVICE_CREDENTIAL);
-//                startActivityForResult(enrollIntent, REQUEST_CODE);
-//                break;
-//        }
-
         Executor executor = ContextCompat.getMainExecutor(this);
         BiometricPrompt biometricPrompt = new BiometricPrompt(MainActivity.this,
                 executor, new BiometricPrompt.AuthenticationCallback() {
@@ -92,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(),
                         "Authentication error: " + errString, Toast.LENGTH_SHORT)
                         .show();
+                setContentView(R.layout.auth_wait_room);
             }
 
             @Override
@@ -108,13 +90,14 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "Authentication failed",
                         Toast.LENGTH_SHORT)
                         .show();
+                setContentView(R.layout.auth_wait_room);
             }
         });
 
         BiometricPrompt.PromptInfo promptInfo = new BiometricPrompt.PromptInfo.Builder()
-                .setTitle("Biometric login for my app")
-                .setSubtitle("Log in using your biometric credential")
-                .setNegativeButtonText("Use account password")
+                .setTitle("Verify your identity")
+                .setSubtitle("marketplanner.inc needs to verify it's you")
+                .setNegativeButtonText("Cancel authorization")
                 .build();
         biometricPrompt.authenticate(promptInfo);
     }
