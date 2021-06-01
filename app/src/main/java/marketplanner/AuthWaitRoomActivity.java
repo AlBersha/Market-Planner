@@ -7,6 +7,7 @@ import androidx.core.content.ContextCompat;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import marketplanner.stocks.R;
@@ -20,8 +21,6 @@ public class AuthWaitRoomActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.auth_wait_room);
-
-        View view = findViewById(R.id.auth_button);
 
         biometricPrompt = new BiometricPrompt(AuthWaitRoomActivity.this,
                 ContextCompat.getMainExecutor(this), new BiometricPrompt.AuthenticationCallback() {
@@ -49,21 +48,33 @@ public class AuthWaitRoomActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "Authentication failed",
                         Toast.LENGTH_SHORT)
                         .show();
+                if (biometricPrompt == null)
+                    Toast.makeText(getApplicationContext(), "Prompt is null",
+                        Toast.LENGTH_SHORT)
+                        .show();
+
                 setContentView(R.layout.auth_wait_room);
             }
         });
 
-        view.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                promptInfo = new BiometricPrompt.PromptInfo.Builder()
-                        .setTitle("Verify your identity")
-                        .setSubtitle("marketplanner.inc needs to verify it's you")
-                        .setNegativeButtonText("Cancel authorization")
-                        .build();
+        promptInfo = new BiometricPrompt.PromptInfo.Builder()
+                .setTitle("Verify your identity")
+                .setSubtitle("marketplanner.inc needs to verify it's you")
+                .setNegativeButtonText("Cancel authorization")
+                .build();
+    }
 
-                biometricPrompt.authenticate(promptInfo);
-            }
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        Button view = (Button)findViewById(R.id.auth_button);
+        view.setOnClickListener(v -> {
+            Toast.makeText(getApplicationContext(), "Authorize button pressed",
+                    Toast.LENGTH_SHORT)
+                    .show();
+
+            biometricPrompt.authenticate(promptInfo);
         });
     }
 }

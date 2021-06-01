@@ -99,6 +99,7 @@ public class MainActivity extends AppCompatActivity {
                 .setSubtitle("marketplanner.inc needs to verify it's you")
                 .setNegativeButtonText("Cancel authorization")
                 .build();
+
         biometricPrompt.authenticate(promptInfo);
     }
 
